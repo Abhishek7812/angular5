@@ -1,11 +1,10 @@
-import { DashboardsComponent } from './dashboard.component';
 import { Component, OnInit } from '@angular/core';
 import { StocksService} from '../stocks.service';
 
 @Component({
-  selector: 'app-bank',
-  templateUrl: './bank.component.html',
-  styleUrls: ['./bank.component.css']
+  selector: 'app-dashboard',
+  templateUrl: './dashboard.component.html',
+  styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
 
@@ -19,8 +18,8 @@ export class DashboardComponent implements OnInit {
   		.subscribe(
           data => console.log(JSON.stringify(data)) ,
           error =>console.log('Server Error')
-  		);	
-  	
+  		);
+
   }
 
 }
